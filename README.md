@@ -2,9 +2,6 @@
 
 Custom Animation Player for Roblox.
 
-Get the module here:
-[Releases](https://github.com/Chapsoii/KFS-player-for-Roblox/releases)
-
 ## Pros
 
 - Feels (almost) exactly like Roblox's [AnimationTrack](https://developer.roblox.com/en-us/api-reference/class/AnimationTrack) API.
@@ -26,20 +23,11 @@ Easing functions :
 
 # Documentation
 
-## Example :
+## Constructor
 ```lua
---//Our Variables
-local Animator = require(insert directory here)
-local TargetKFS = (insert KeyframeSequence here)
-local Model = (insert target model here to animate)
-local HighPriority = false
-
---//Create a new Track and play it
-local AnimationTrack = Animator.new(TargetKFS,Model,HighPriority)
-AnimationTrack.Do("Play")
-
+local AnimationTrack = module.new(KFS : KeyframeSequence, Model : Model, highpriority : boolean)
 ```
-
+- Constucts a new AnimationTrack.
 ## Methods :
 ```lua
 AnimationTrack:Do(arg1 : string, arg2 : number)
@@ -57,4 +45,22 @@ AnimationTrack:Cleanup()
 ```lua
 AnimationTrack.Listener.Event --//Returns a string
 ```
-Similar to Roblox's "GetMarkerReachedSignal". (Useful for timing certain actions.)
+- Similar to Roblox's "GetMarkerReachedSignal". (Useful for timing certain actions.)
+```lua
+AnimationTrack.stateChanged.Event --//Returns a string
+```
+- Returns 3 types of states. ("Play","Loop","Neutral")
+
+## Example :
+```lua
+--//Our Variables
+local Animator = require(insert directory here)
+local TargetKFS = (insert KeyframeSequence here)
+local Model = (insert target model here to animate)
+local HighPriority = false
+
+--//Create a new Track and play it
+local AnimationTrack = Animator.new(TargetKFS,Model,HighPriority)
+AnimationTrack.Do("Play")
+
+```
