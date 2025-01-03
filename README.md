@@ -2,6 +2,9 @@
 
 Custom Animation Player for Roblox.
 
+Get the module here:
+[Releases](https://github.com/Chapsoii/KFS-player-for-Roblox/releases)
+
 ## Pros
 
 - Feels (almost) exactly like Roblox's [AnimationTrack](https://developer.roblox.com/en-us/api-reference/class/AnimationTrack) API.
