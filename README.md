@@ -25,7 +25,7 @@ Easing functions :
 local AnimationTrack = module.new(KFS : KeyframeSequence, Model : Model, highpriority : boolean)
 ```
 - Constucts a new AnimationTrack.
-## Methods :
+## Methods 
 ```lua
 AnimationTrack:Do(arg1 : string, arg2 : number)
 ```
@@ -38,7 +38,7 @@ AnimationTrack:Do(arg1 : string, arg2 : number)
 AnimationTrack:Cleanup()
 ```
 - Clears itself. (Disconnecting events and forgetting variables...)
-## Events :
+## Events 
 ```lua
 AnimationTrack.Listener.Event --//Returns a string
 ```
@@ -48,7 +48,7 @@ AnimationTrack.stateChanged.Event --//Returns a string
 ```
 - Returns 3 types of states. ("Play","Loop","Neutral")
 
-## Example :
+## Example 
 ```lua
 --//Our Variables
 local Animator = require(insert directory here)
