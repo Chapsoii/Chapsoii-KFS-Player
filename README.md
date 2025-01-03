@@ -1,6 +1,4 @@
-# KeyframeSequence player
-
-Custom Animation Player for Roblox.
+# Chapsoii's KeyframeSequence Player for Roblox
 
 ## Pros
 
