@@ -7,7 +7,6 @@ Custom Animation Player for Roblox.
 - Feels (almost) exactly like Roblox's [AnimationTrack](https://developer.roblox.com/en-us/api-reference/class/AnimationTrack) API.
 - Supports any rigs.
 - No more uploading in order to play animations.
-- Chadness.
 
 ## Cons
 
